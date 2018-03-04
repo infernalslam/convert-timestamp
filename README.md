@@ -17,7 +17,7 @@ yarn add convert-time
 #### Javascript ES5
 
 ```javascript
-const timeStamp = require('convert-time') // for ES5
+const timeStamp = require('convert-timestamp') // for ES5
 let startTime = new Date().getTime()
 let endTime = new Date().getTime() + 30 * 60 * 1000 // 15 minutes
 let range = timeStamp.diff(startTime, endTime)
