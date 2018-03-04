@@ -6,7 +6,7 @@ const diff = (timeStart, timeEnd) => {
   difference -= hoursDifference * 1000 * 60 * 60
   let minutesDifference = getMiutes(difference)
   difference -= minutesDifference * 1000 * 60
-  let secondsDifference = getseconds(difference)
+  let secondsDifference = getSeconds(difference)
   return {
     days: daysDifference,
     hours: hoursDifference,
@@ -24,7 +24,7 @@ const getHours = (timestamp) => {
 const getMiutes = (timestamp) => {
   return Math.floor(timestamp / 1000 / 60)
 }
-const getseconds = (timestamp) => {
+const getSeconds = (timestamp) => {
   return Math.floor(timestamp / 1000)
 }
 
@@ -33,5 +33,5 @@ module.exports = {
   getDays,
   getHours,
   getMiutes,
-  getseconds
+  getSeconds
 }

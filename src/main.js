@@ -1,2 +1,2 @@
-const timer = require('./index.js')
-console.log(timer.diff(new Date().getTime(), new Date().getTime() + 30 * 60 * 1000))
+const timeStamp = require('./index.js')
+console.log(timeStamp.diff(new Date().getTime(), new Date().getTime() + 30 * 60 * 1000))
