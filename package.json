@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./src/main.js --compilers js:babel-register"
+    "dev": "./example/main.js --compilers js:babel-register",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +18,21 @@
     "eslint": "^3.17.1",
     "eslint-config-airbnb-base": "^11.1.1",
     "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "jest": "^22.4.2"
+  },
+  "jest": {
+    "verbose": true,
+    "testMatch": [
+      "**/test/**.test.js"
+    ]
+  },
+  "eslintConfig": {
+    "globals": {
+      "describe": true,
+      "test": true,
+      "expect": true
+    }
   }
 }
